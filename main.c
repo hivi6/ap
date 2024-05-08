@@ -15,7 +15,7 @@ int main(int argc, const char* argv[]) {
 
 
   int err = ap_parser_parse(parser, argc, argv);
-  ap_parser_usage(parser);
+  ap_parser_help(parser);
   if (err) {
     printf("Something went wrong while parsing\n");
     exit(1);

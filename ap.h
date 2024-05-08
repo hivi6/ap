@@ -149,7 +149,7 @@ int ap_parser_parse(struct ap_parser *parser, int argc, const char **argv) {
   return -1;
 }
 
-int ap_parser_usage(struct ap_parser *parser) {
+int ap_parser_help(struct ap_parser *parser) {
   printf("Description:\n  %s\n\n", parser->desc);
   printf("Usage:\n  %s [options]\n\n", parser->program_name);
   printf("Options:\n");
